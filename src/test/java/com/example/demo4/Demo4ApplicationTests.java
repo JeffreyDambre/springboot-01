@@ -25,6 +25,9 @@ public class Demo4ApplicationTests {
 
 		notification = notificationDAO.findById(0);
 		Assertions.assertThat(notification).isNull();
+
+		notification = notificationDAO.findById(3);
+		Assertions.assertThat(notification).isNull();
 	}
 
 }
